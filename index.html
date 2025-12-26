@@ -45,9 +45,10 @@
             padding: 5rem 1.5rem 4rem;
             position: relative;
             overflow: hidden;
-            background-image: url("swingout-1.png");
+            background-image: url("swingout_landing.png");
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
         }
 
         .menu-toggle {
@@ -223,6 +224,17 @@
             margin: 0;
             line-height: 1.5;
             color: rgba(243, 230, 200, 0.9);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 0;
+                width: 100%;
+                aspect-ratio: 910 / 606;
+                background-size: contain;
+                background-position: center top;
+                padding: 0;
+            }
         }
 
         @media (max-width: 600px) {
