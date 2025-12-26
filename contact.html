@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swingout Sundays | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Great+Vibes&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="menu-toggle" type="button" aria-controls="menu-panel" aria-expanded="false">
+        <span class="menu-toggle__bar"></span>
+        <span class="sr-only">Open menu</span>
+    </button>
+    <div class="menu-scrim" data-menu-close></div>
+    <nav class="menu-panel" id="menu-panel" aria-hidden="true">
+        <p class="menu-panel__title">Swingout Sundays</p>
+        <div class="menu-panel__links">
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+        <button class="menu-panel__close" type="button" data-menu-close>Close</button>
+    </nav>
+    <main>
+        <section class="hero" aria-label="Swingout Sundays flyer"></section>
+        <section class="content">
+            <div class="content__inner">
+                <header class="section-header">
+                    <h1>Contact</h1>
+                    <p>Send a note about Swingout Sundays or share a request for upcoming Sundays.</p>
+                </header>
+                <div class="contact-grid">
+                    <article class="contact-card">
+                        <h2>Venue</h2>
+                        <p>SkyBar Lounge<br>200 Memorial Fwy, Nederland, TX</p>
+                    </article>
+                    <form class="contact-form" action="#" method="post">
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" autocomplete="email" required>
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="menu.js"></script>
+</body>
+</html>
