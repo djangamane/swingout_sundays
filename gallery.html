@@ -34,21 +34,39 @@
                 </header>
                 <div class="gallery-grid">
                     <figure class="gallery-item">
-                        <img src="swingout1.png" alt="Swingout Sundays dance floor moment 1" loading="lazy">
+                        <button class="gallery-item__trigger" type="button" data-lightbox data-type="image" data-src="swingout1.png" data-alt="Swingout Sundays dance floor moment 1">
+                            <img src="swingout1.png" alt="Swingout Sundays dance floor moment 1" loading="lazy">
+                        </button>
                     </figure>
                     <figure class="gallery-item">
-                        <img src="swingout2.png" alt="Swingout Sundays dance floor moment 2" loading="lazy">
+                        <button class="gallery-item__trigger" type="button" data-lightbox data-type="image" data-src="swingout2.png" data-alt="Swingout Sundays dance floor moment 2">
+                            <img src="swingout2.png" alt="Swingout Sundays dance floor moment 2" loading="lazy">
+                        </button>
                     </figure>
                     <figure class="gallery-item">
-                        <img src="swingout3.png" alt="Swingout Sundays dance floor moment 3" loading="lazy">
+                        <button class="gallery-item__trigger" type="button" data-lightbox data-type="image" data-src="swingout3.png" data-alt="Swingout Sundays dance floor moment 3">
+                            <img src="swingout3.png" alt="Swingout Sundays dance floor moment 3" loading="lazy">
+                        </button>
                     </figure>
                     <figure class="gallery-item">
-                        <video src="swingout_vid.mp4" controls preload="metadata" playsinline></video>
+                        <button class="gallery-item__trigger" type="button" data-lightbox data-type="video" data-src="swingout_vid.mp4" data-alt="Swingout Sundays highlight video">
+                            <video src="swingout_vid.mp4" preload="metadata" muted playsinline></video>
+                            <span class="gallery-item__play">Play video</span>
+                        </button>
                     </figure>
                 </div>
             </div>
         </section>
     </main>
+    <div class="lightbox" aria-hidden="true">
+        <div class="lightbox__scrim" data-lightbox-close></div>
+        <div class="lightbox__content" role="dialog" aria-modal="true" aria-label="Gallery preview">
+            <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+            <img class="lightbox__media lightbox__image" alt="">
+            <video class="lightbox__media lightbox__video" controls></video>
+        </div>
+    </div>
     <script src="menu.js"></script>
+    <script src="gallery.js"></script>
 </body>
 </html>
